@@ -1,10 +1,6 @@
 [Uno.Compiler.UxGenerated]
 public partial class MainView: Fuse.App
 {
-    global::Uno.UX.Property<string> temp_Value_inst;
-    global::Uno.UX.NameTable __g_nametable;
-    static string[] __g_static_nametable = new string[] {
-    };
     static MainView()
     {
         global::Uno.UX.Resource.SetGlobalKey(Fuse.Animations.Easing.Linear, "Linear");
@@ -111,38 +107,29 @@ public partial class MainView: Fuse.App
     }
     void InitializeUX()
     {
-        var temp1 = new Fuse.Reactive.FuseJS.DiagnosticsImplModule();
-        var temp2 = new Fuse.Reactive.FuseJS.Http();
-        var temp3 = new Fuse.Reactive.FuseJS.TimerModule();
-        var temp4 = new Fuse.Drawing.BrushConverter();
-        var temp5 = new Fuse.Triggers.BusyTaskModule();
-        var temp6 = new Fuse.FileSystem.FileSystemModule();
-        var temp7 = new Fuse.Storage.StorageModule();
-        var temp8 = new Fuse.WebSocket.WebSocketClientModule();
-        var temp9 = new Polyfills.Window.WindowModule();
-        var temp10 = new FuseJS.Globals();
-        var temp11 = new FuseJS.Lifecycle();
-        var temp12 = new FuseJS.Environment();
-        var temp13 = new FuseJS.Base64();
-        var temp14 = new FuseJS.Bundle();
-        var temp15 = new FuseJS.FileReaderImpl();
-        var temp16 = new FuseJS.UserEvents();
-        __g_nametable = new global::Uno.UX.NameTable(null, __g_static_nametable);
-        var temp = new Fuse.Controls.Text();
-        temp_Value_inst = new hikr_FuseControlsTextControl_Value_Property(temp, __selector0);
-        var temp17 = new Fuse.Controls.ClientPanel();
-        var temp18 = new Fuse.Reactive.JavaScript(__g_nametable);
-        var temp19 = new Fuse.Controls.StackPanel();
-        var temp20 = new Fuse.Reactive.DataBinding<string>(temp_Value_inst, "name");
+        var temp = new Fuse.Reactive.FuseJS.DiagnosticsImplModule();
+        var temp1 = new Fuse.Reactive.FuseJS.Http();
+        var temp2 = new Fuse.Reactive.FuseJS.TimerModule();
+        var temp3 = new Fuse.Drawing.BrushConverter();
+        var temp4 = new Fuse.Triggers.BusyTaskModule();
+        var temp5 = new Fuse.FileSystem.FileSystemModule();
+        var temp6 = new Fuse.Storage.StorageModule();
+        var temp7 = new Fuse.WebSocket.WebSocketClientModule();
+        var temp8 = new Polyfills.Window.WindowModule();
+        var temp9 = new FuseJS.Globals();
+        var temp10 = new FuseJS.Lifecycle();
+        var temp11 = new FuseJS.Environment();
+        var temp12 = new FuseJS.Base64();
+        var temp13 = new FuseJS.Bundle();
+        var temp14 = new FuseJS.FileReaderImpl();
+        var temp15 = new FuseJS.UserEvents();
+        var temp16 = new Fuse.Controls.ClientPanel();
+        var temp17 = new Fuse.Controls.PageControl();
+        var temp18 = new HomePage();
+        var temp19 = new EditHikePage();
+        temp16.Children.Add(temp17);
         temp17.Children.Add(temp18);
         temp17.Children.Add(temp19);
-        temp18.Code = "var name = \"Tricky Trails\";\n      module.export = {\n        name: name\n      };";
-        temp18.LineNumber = 3;
-        temp18.FileName = "MainView.ux";
-        temp19.Children.Add(temp);
-        temp.Bindings.Add(temp20);
-        __g_nametable.This = this;
-        this.Children.Add(temp17);
+        this.Children.Add(temp16);
     }
-    static global::Uno.UX.Selector __selector0 = "Value";
 }

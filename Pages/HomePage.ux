@@ -1,0 +1,8 @@
+<Page ux:Class="HomePage">
+  <JavaScript File="HomePage.js"/>
+  <ScrollView>
+    <Each Items = "{hikes}">
+      <Button Text="{name}" Clicked="{chooseHike}"/>
+    </Each>
+  </ScrollView>
+</Page>
