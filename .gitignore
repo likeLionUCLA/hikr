@@ -1,0 +1,4 @@
+*.uno
+*.g.uno
+
+.DS_Store
