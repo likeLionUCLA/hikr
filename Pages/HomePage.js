@@ -1,10 +1,11 @@
-let hikes = require("hikes");
+var hikes = require("hikes");
 
-const chooseHike = function(arg){
-  // hike.value = arg.data;
-};
+function chooseHike(arg) {
+    // Todo
+}
 
 module.exports = {
-  hikes: hikes,
-  chooseHike: chooseHike
+    hikes: hikes,
+
+    chooseHike: chooseHike
 };

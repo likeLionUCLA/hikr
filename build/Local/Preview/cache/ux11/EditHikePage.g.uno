@@ -31,7 +31,7 @@ public partial class EditHikePage: Fuse.Controls.Page
         temp3_Value_inst = new hikr_FuseControlsTextInputControl_Value_Property(temp3, __selector0);
         var temp4 = new Fuse.Controls.TextBox();
         temp4_Value_inst = new hikr_FuseControlsTextInputControl_Value_Property(temp4, __selector0);
-        var temp5 = new Fuse.Controls.TextBox();
+        var temp5 = new Fuse.Controls.TextView();
         temp5_Value_inst = new hikr_FuseControlsTextInputControl_Value_Property(temp5, __selector0);
         var temp6 = new Fuse.Reactive.JavaScript(__g_nametable);
         var temp7 = new Fuse.Controls.ScrollView();
@@ -67,7 +67,7 @@ public partial class EditHikePage: Fuse.Controls.Page
         temp1.Bindings.Add(temp11);
         temp12.Value = "Location:";
         temp2.Bindings.Add(temp13);
-        temp14.Value = "Distance (km) :";
+        temp14.Value = "Distance (km):";
         temp3.InputHint = Fuse.Controls.TextInputHint.Decimal;
         temp3.Bindings.Add(temp15);
         temp16.Value = "Rating:";
