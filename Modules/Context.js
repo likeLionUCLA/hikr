@@ -1,5 +1,5 @@
-var Observable = require("FuseJS/Observable");
-var Backend = require("./Backend");
+const Observable = require("FuseJS/Observable");
+const Backend = require("./Backend");
 
 var hikes = Observable();
 
@@ -24,10 +24,10 @@ function updateHike(id, name, location, distance, rating, comments) {
             break;
         }
     }
-    Backend.updateHike(id, name, location, distance, rating, comments)
-        .catch(function(error) {
-            console.log("Couldn't update hike: " + id);
-        });
+    // Backend.updateHike(id, name, location, distance, rating, comments)
+    //     .catch(function(error) {
+    //         console.log("Couldn't update hike: " + id);
+    //     });
 }
 
 module.exports = {
