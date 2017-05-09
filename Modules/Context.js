@@ -1,7 +1,7 @@
 const Observable = require("FuseJS/Observable");
 const Backend = require("./Backend");
 
-var hikes = Observable();
+let hikes = Observable();
 
 Backend.getHikes()
     .then(function(newHikes) {
