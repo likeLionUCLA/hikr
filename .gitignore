@@ -1,3 +1,7 @@
+build/
+.uno/
+
+
 *.uno
 *.g.uno
 build/*
