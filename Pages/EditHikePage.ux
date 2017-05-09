@@ -20,7 +20,7 @@
 
             <Text>Comments:</Text>
             <TextView Value="{comments}" TextWrapping="Wrap" />
-            <Button Text="Back" Clicked="{goBack}" />
+            <Button Text="Cancel" Clicked="{cancel}" />
         </StackPanel>
     </ScrollView>
 </Page>
